@@ -215,7 +215,7 @@ https://github.com/padelt/temper-python
 ip, mac = "192.168.1.66", "AC:CF:23:83:67:12"
 control = orviboS20 ()
 wantedTemp = 20
-verbose = false
+verbose = False
 
 def getTemperature():
     th = TemperHandler()
