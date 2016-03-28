@@ -215,6 +215,7 @@ https://github.com/padelt/temper-python
 ip, mac = "192.168.1.66", "AC:CF:23:83:67:12"
 control = orviboS20 ()
 wantedTemp = 20
+verbose = false
 
 def getTemperature():
     th = TemperHandler()
@@ -222,9 +223,10 @@ def getTemperature():
     return int(devs[0].get_temperature())
 
 def getState():
-    print "State retrieved from socket"
     details = control.subscribe (ip, mac)
-    print details
+    if verbose:
+        print details
+        print "State retrieved from socket"
     return details['state']
 
 state = getState()
@@ -242,8 +244,9 @@ while 1:
         elif temp > wantedTemp and state == 1:
             control.poweroff(ip, mac)
             state = 0
-        print "Current temperature: " + str(temp)
-        print "Current state: " + str(state)
+        if verbose:
+            print "Current temperature: " + str(temp)
+            print "Current state: " + str(state)
         time.sleep(10)
     except:
         print "There was an exception. It might just be a network error"
