@@ -1,0 +1,30 @@
+'Adds checkboxes to every cell in the selection, and color codes each cell dynamically whenever each checkbox is checked.
+'Useful for creating checked lists
+Sub AddCheckBoxes()
+Dim c As Range, myRange As Range
+Set myRange = Selection
+For Each c In myRange.Cells
+ActiveSheet.CheckBoxes.Add(c.Left, c.Top, c.Width, c.Height).Select
+With Selection
+.LinkedCell = c.Address
+.Characters.Text = ""
+.Name = c.Address
+End With
+c.Select
+With Selection
+.FormatConditions.Delete
+.FormatConditions.Add Type:=xlExpression, _
+Formula1:="=" & c.Address & "=TRUE"
+.FormatConditions(1).Font.ColorIndex = 10 'change for other color when ticked
+.FormatConditions(1).Interior.ColorIndex = 10 'change for other color
+when ticked
+.FormatConditions.Add Type:=xlExpression, Formula1:= _
+"=ISNA(" & c.Address & ")"
+.FormatConditions(2).Font.ColorIndex = 6 'change for other color when ticked
+.FormatConditions(2).Interior.ColorIndex = 6 'change for other color when ticked
+
+.Font.ColorIndex = 2 'cell background color = White
+End With
+Next
+myRange.Select
+End Sub
