@@ -14,6 +14,7 @@ Return
 
 
 
+
 ; ---------------------
 ; -HIDE & SHOW TASKBAR-
 ; ---------------------
@@ -29,14 +30,29 @@ Return
    Return
 
    
-   
-   
+;
+;-CLOSE CMD and SKYPE-
+;
+$~!F4::
+
+WinGetTitle, Title, A
+;Seriously what the fuck why does autohotkey not have arrays?!
+if (InStr(Title, "Skype") == 1) && (InStr(Title, "joshua.richardson")) {
+	WinKill, %Title%
+}
+if (InStr(Title, "Administrator: C:\Windows\system32\cmd.exe")) {
+	WinKill, %Title%
+}
+
+Return
+
 ; ---------------------
 ; --HOTKEYS FOR GAMES--
 ; ---------------------
 
 $~^Z::
 WinGetTitle, Title, A
+
  if(Title="Warcraft III") {
     Send {Enter}
     Send -worker
