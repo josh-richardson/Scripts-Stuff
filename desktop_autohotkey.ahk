@@ -4,7 +4,12 @@ VarSetCapacity(APPBARDATA, A_PtrSize=4 ? 36:48)
 ; ---------------------
 ; -----KEY REMAPS------
 ; ---------------------
-`::
+
+!`::
+Send ``
+Return
+
+$`::
 Send \
 Return
 
