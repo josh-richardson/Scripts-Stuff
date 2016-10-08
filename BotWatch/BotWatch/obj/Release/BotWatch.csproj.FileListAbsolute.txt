@@ -1,0 +1,15 @@
+d:\users\joshua\documents\visual studio 2015\Projects\BotWatch\BotWatch\bin\Release\BotWatch.exe.config
+d:\users\joshua\documents\visual studio 2015\Projects\BotWatch\BotWatch\bin\Release\BotWatch.exe
+d:\users\joshua\documents\visual studio 2015\Projects\BotWatch\BotWatch\bin\Release\BotWatch.pdb
+d:\users\joshua\documents\visual studio 2015\Projects\BotWatch\BotWatch\obj\Release\BotWatch.Properties.Resources.resources
+d:\users\joshua\documents\visual studio 2015\Projects\BotWatch\BotWatch\obj\Release\BotWatch.csproj.GenerateResource.Cache
+d:\users\joshua\documents\visual studio 2015\Projects\BotWatch\BotWatch\obj\Release\BotWatch.exe
+d:\users\joshua\documents\visual studio 2015\Projects\BotWatch\BotWatch\obj\Release\BotWatch.pdb
+D:\Users\Joshua\Dropbox\Projects\C# & VB\BotWatch\BotWatch\bin\Release\BotWatch.exe.config
+D:\Users\Joshua\Dropbox\Projects\C# & VB\BotWatch\BotWatch\obj\Release\BotWatch.exe
+D:\Users\Joshua\Dropbox\Projects\C# & VB\BotWatch\BotWatch\obj\Release\BotWatch.pdb
+D:\Users\Joshua\Dropbox\Projects\C# & VB\BotWatch\BotWatch\bin\Release\BotWatch.exe
+D:\Users\Joshua\Dropbox\Projects\C# & VB\BotWatch\BotWatch\bin\Release\BotWatch.pdb
+D:\Users\Joshua\Dropbox\Projects\C# & VB\BotWatch\BotWatch\obj\Release\BotWatch.csprojResolveAssemblyReference.cache
+D:\Users\Joshua\Dropbox\Projects\C# & VB\BotWatch\BotWatch\obj\Release\BotWatch.Properties.Resources.resources
+D:\Users\Joshua\Dropbox\Projects\C# & VB\BotWatch\BotWatch\obj\Release\BotWatch.csproj.GenerateResource.Cache

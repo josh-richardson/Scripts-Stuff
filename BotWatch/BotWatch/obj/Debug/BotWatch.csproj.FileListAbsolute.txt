@@ -1,0 +1,11 @@
+d:\users\joshua\documents\visual studio 2015\Projects\BotWatch\BotWatch\bin\Debug\BotWatch.exe.config
+d:\users\joshua\documents\visual studio 2015\Projects\BotWatch\BotWatch\obj\Debug\BotWatch.csprojResolveAssemblyReference.cache
+d:\users\joshua\documents\visual studio 2015\Projects\BotWatch\BotWatch\bin\Debug\BotWatch.exe
+d:\users\joshua\documents\visual studio 2015\Projects\BotWatch\BotWatch\bin\Debug\BotWatch.pdb
+d:\users\joshua\documents\visual studio 2015\Projects\BotWatch\BotWatch\obj\Debug\BotWatch.exe
+d:\users\joshua\documents\visual studio 2015\Projects\BotWatch\BotWatch\obj\Debug\BotWatch.pdb
+d:\users\joshua\documents\visual studio 2015\Projects\BotWatch\BotWatch\obj\Debug\BotWatch.Properties.Resources.resources
+d:\users\joshua\documents\visual studio 2015\Projects\BotWatch\BotWatch\obj\Debug\BotWatch.csproj.GenerateResource.Cache
+D:\Users\Joshua\Dropbox\Projects\C# & VB\BotWatch\BotWatch\bin\Debug\BotWatch.exe.config
+D:\Users\Joshua\Dropbox\Projects\C# & VB\BotWatch\BotWatch\obj\Debug\BotWatch.exe
+D:\Users\Joshua\Dropbox\Projects\C# & VB\BotWatch\BotWatch\obj\Debug\BotWatch.pdb
