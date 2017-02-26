@@ -15,3 +15,13 @@ echo --------------------------------------
 echo ---Downloading ^& extracting nircmdc---
 echo --------------------------------------
 powershell -Command "(New-Object Net.WebClient).DownloadFile('http://www.nirsoft.net/utils/nircmd.zip', 'nircmd.zip') ; Add-Type -A System.IO.Compression.FileSystem ; [IO.Compression.ZipFile]::ExtractToDirectory('nircmd.zip', 'nircmd')"
+"%PROGRAMFILES(X86)%\nircmd\nircmdc.exe" setfilefoldertime "%PROGRAMFILES(X86)%" now now
+"%PROGRAMFILES(X86)%\nircmd\nircmdc.exe" setfilefoldertime "%PROGRAMFILES%" now now
+echo --------------------------------------
+echo ---------Changing MAC Address---------
+echo --------------------------------------
+getmac /V | find "\Device\" | find /V "Virtual" | find /V "VMWare" > tempfile
+set /p otpt=<tempfile
+del tempfile
+echo %otpt%
+pause
