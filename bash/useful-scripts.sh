@@ -16,3 +16,10 @@ git ls-files | grep '.py\|.html' | xargs cat | wc -l
 
 # Listens on HTTP requests over a connection and returns a list of visited sites:
 sudo ngrep -q -d wlp3s0 -W byline port 80 | grep Host
+
+
+# Downloads everything from a specified moodle course without the need to patch wget:
+wget --save-cookies cookies.txt --keep-session-cookies --post-data 'username=YOUR_USER_ID&password=YOUR_PASSWORD' https://moodle2.gla.ac.uk/login/index.php \ 
+&& wget --load-cookies cookies.txt --keep-session-cookies --save-cookies cookies.txt --content-disposition --referer=http://moodle2.gla.ac.uk.com/login/index.php \ 
+-m -E -k --reject logout*,*cal_m*,*cal_y*,post.php*,*subscribe*,help.php*,enrol.php*,discuss.php*,search.php*,recent.php* -l 1 \ 
+--exclude-directories=/calendar http://moodle2.gla.ac.uk/course/view.php?id=789
