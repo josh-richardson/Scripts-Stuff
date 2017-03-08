@@ -19,4 +19,4 @@ wget --save-cookies cookies.txt --keep-session-cookies --post-data 'username=YOU
 
 
 # Store git credentials with libsecret
-git config --global credential.helper libsecret
+git config --global credential.helper gnome-keyring
