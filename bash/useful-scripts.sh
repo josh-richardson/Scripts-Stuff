@@ -20,3 +20,7 @@ wget --save-cookies cookies.txt --keep-session-cookies --post-data 'username=YOU
 
 # Store git credentials with libsecret
 git config --global credential.helper gnome-keyring
+
+
+# Store git details using libsecret (n.b. must be installed and built using makefule)
+git config --global credential.helper /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
