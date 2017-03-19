@@ -24,3 +24,11 @@ git config --global credential.helper gnome-keyring
 
 # Store git details using libsecret (n.b. must be installed and built using makefule)
 git config --global credential.helper /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
+
+
+# Forcefull removes and deletes all docker containers and images
+docker rm -fv $(docker ps -a -q) && docker rmi $(docker images -q)
+
+
+# Adds current user to docker usergroup allowing for use without sudo
+sudo groupadd docker && sudo gpassword -a ${USER} docker && sudo service docker restart && newgrp docker
